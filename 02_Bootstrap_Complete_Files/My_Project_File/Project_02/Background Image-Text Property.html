@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="bootstrap/css/fontawesome.5.15.3.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Basic Typography</title>
+    <style>
+        body{
+            margin-bottom: 200px;
+        }
+        .list-number{
+            font-size: 35px;
+            color: #be59fd;
+        }
+        .cocktail{
+            margin-top: 30px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-success">
+        <a href="#" class="navbar-brand">Basic Typography in Bootstrap</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarnav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <div class="container">
+        <!-#################### START HERE ####################-->
+
+        <ol>
+            <li class="list-number font-weight-bold">
+                <h2 class="text-capitalize">text typography starts from here</h2>
+            </li>
+
+        <!---------- DISPLAY CLASSES (display-1)---------->
+            <h3 class="text-capitalize text-warning mt-5">display classes (display-1)</h3>
+            <br>
+
+        <h1 class="display-1">My Heading</h1>
+        <h1 class="display-2">My Heading</h1>
+        <h1 class="display-3">My Heading</h1>
+        <h1 class="display-4">My Heading</h1>
+
+        <!---------- PARAGRAPHS (lead or muted)---------->
+            <h3 class="text-warning text-capitalize mt-5">example of paragraph (lead or muted)</h3>
+            <br>
+
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi debitis dignissimos, dolores ex inventore, maiores modi nihil obcaecati pariatur quibusdam quidem, quo repellendus repudiandae! Accusamus iusto nihil sed tenetur totam.</p>
+
+        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi debitis dignissimos, dolores ex inventore, maiores modi nihil obcaecati pariatur quibusdam quidem, quo repellendus repudiandae! Accusamus iusto nihil sed tenetur totam.</p>
+
+        <!---------- STYLE CLASSES (font weight)---------->
+            <h3 class="text-warning text-capitalize mt-5">style classes (font weight)</h3>
+            <br>
+
+        <p class="font-weight-bold">Bold Text</p>
+        <p class="font-weight-normal">Normal Text</p>
+        <p class="font-italic">Italic Text</p>
+
+        <!---------- TEXT TRANSFORMS ---------->
+            <h3 class="text-warning text-capitalize mt-5">example of text transforms</h3>
+            <br>
+
+        <p class="text-lowercase">HELLO WORLD</p>
+        <p class="text-uppercase">hello world</p>
+        <p class="text-capitalize">hello world</p>
+
+        <!---------- UNSTYLED LISTS ---------->
+            <h3 class="text-capitalize text-warning mt-5">Example of list unstyled</h3>
+            <br>
+
+        <ul class="list-unstyled">
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+        </ul>
+
+        <br><br>
+
+
+    <!-#################### TEXT ALIGNMENT ####################-->
+        <li class="list-number font-weight-bold">
+            <h2 class="text-capitalize">text alignment starts from here (part-2)</h2>
+        </li>
+  </ol>
+        <br><br>
+
+
+    <div class="container">
+        <!---------- TEXT JUSTIFY ---------->
+        <h3 class="text-justify text-capitalize text-warning mt-4">example of text justify</h3>
+        <br>
+
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda, consectetur earum error ex hic iste maxime molestiae molestias non nostrum nulla perferendis provident quo quod sunt unde voluptatum. Amet animi consequuntur cumque dolorum eius incidunt minima molestias odio reiciendis velit. Ab alias at cum dolores earum, nemo optio sapiente.</p>
+
+        <br>
+
+        <!---------- TEXT ALIGNMENT ---------->
+        <h3 class="text-capitalize text-warning mt-3">example of text alignment</h3>
+        <br>
+
+        <p class="text-left">Lorem ipsum dolor sit.</p>
+        <p class="text-center">Lorem ipsum dolor sit.</p>
+        <p class="text-right">Lorem ipsum dolor sit.</p>
+
+        <!---------- RESPONSIVE TEXT ALIGN ---------->
+        <h3 class="text-capitalize text-warning mt-5">example of responsive text align</h3>
+        <br>
+
+        <p class="text-sm-right">Right aligned on small or larger</p>
+        <p class="text-md-right">Right aligned on medium or larger</p>
+        <p class="text-lg-right">Right aligned on large or larger</p>
+        <p class="text-xl-right">Right aligned on xl or larger</p>
+
+        <br>
+
+        <!---------- TURN BLOCK TO INLINE ---------->
+        <h3 class="text-capitalize text-warning mt-3">turn block to inline example</h3>
+        <br>
+
+        <h1 class="bg-success d-inline">Hello</h1>
+        <h1 class="bg-success d-inline">Goodbye</h1>
+
+        <!---------- TURN INLINE TO BLOCK ---------->
+        <h3 class="cocktail text-capitalize text-warning">turn inline to block example</h3>
+        <br>
+        <span class="bg-warning d-inline">Block</span>
+        <br><br>
+
+        <!---------- INLINE BLOCK ---------->
+        <div class="big-info">
+            <h3>Hello</h3>
+            This is inline
+        </div>
+
+        <div class="big-info">
+            <h3>Hello</h3>
+            This is inline
+        </div>
+  </div>
+
+    <div style="..."></div>
+    <!---------- BODY ENDS ---------->
+    <script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/mdb.min.js"></script>
+</body>
+</html>

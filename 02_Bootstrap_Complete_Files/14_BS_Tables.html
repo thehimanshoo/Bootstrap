@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/fontawesome.5.15.3.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <title>Tables & Pagination in Bootstrap4</title>
+    <style>
+        .table-head{
+            background: linear-gradient(180deg,black,red);
+            padding: 12px;
+            text-shadow: 0 0 10px blue;
+            box-shadow: 0 0 10px blue;
+            border-radius: 10px;
+
+        }
+        .table-subhead{
+            background: linear-gradient(45deg,limegreen,lightsalmon);
+            border-radius: 10px;
+            text-shadow: 0 0 10px black;
+            box-shadow: 0 0 10px black;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-success">
+    <a class="navbar-brand" href="#">Tables & Pagination in Bootstrap4</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5">
+        <!--########################START HERE#########################-->
+
+    <!----------------- Example of Table :- ----------------->
+
+    <h1 class="table-head font-weight-bold text-center text-white">Example of Bootstrap Table :-</h1>
+
+    <p> <ol type="i"><li class="font-weight-bold">In this property of Bootstrap we can apply some Attributes with "class" called "table" for applying the table
+    like interface..</li>
+    <br><li class="font-weight-bold">The Other Attributes called "table-hover" for applying the hover effect on the table when you
+        hover on the table some dark colored background will come..</li>
+    <br><li class="font-weight-bold">The next Attributes is called "table-bordered" for
+        applying the border effect on the table element..</li>
+    <br> <li class="font-weight-bold">The other Attributes called "table-borderless" this Attrubutes
+        will apply to remove the bordered effect form the Bootstrap Table..</li></ol>
+</p><br>
+
+    <!----------------- Example of Class "Table" :- ----------------->
+<ol type="i">
+    <li><h2 class="table-subhead font-weight-bold p-3 text-white text-center">Example of class called "Table"</h2></li>
+    <br>
+
+    <table class="table">
+            <thead>
+                <tr>
+                    <th class="font-weight-bold">#</th>
+                    <th class="font-weight-bold">First Name</th>
+                    <th class="font-weight-bold">Last Name</th>
+                    <th class="font-weight-bold">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>jdoe@gmail.com</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Will</td>
+                    <td>Johnson</td>
+                    <td>will@yahoo.com</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Shannon</td>
+                    <td>Williams</td>
+                    <td>shannon@yahoo.com</td>
+                </tr>
+            </tbody>
+        </table>
+
+    <!----------------- Example of Class "Table-hover" :- ----------------->
+
+    <li><h2 class="table-subhead font-weight-bold p-3 text-white text-center">Example of class called "Table-hover"</h2></li>
+    <br>
+
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th class="font-weight-bold">#</th>
+            <th class="font-weight-bold">First Name</th>
+            <th class="font-weight-bold">Last Name</th>
+            <th class="font-weight-bold">Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>John</td>
+            <td>Doe</td>
+            <td>jdoe@gmail.com</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Will</td>
+            <td>Johnson</td>
+            <td>will@yahoo.com</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Shannon</td>
+            <td>Williams</td>
+            <td>shannon@yahoo.com</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!----------------- Example of Class "Table-bordered" :- ----------------->
+
+    <li><h2 class="table-subhead font-weight-bold p-3 text-white text-center">Example of class called "Table-bordered"</h2></li>
+    <br>
+
+    <table class="table table-hover table-bordered">
+        <thead>
+        <tr>
+            <th class="font-weight-bold">#</th>
+            <th class="font-weight-bold">First Name</th>
+            <th class="font-weight-bold">Last Name</th>
+            <th class="font-weight-bold">Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>John</td>
+            <td>Doe</td>
+            <td>jdoe@gmail.com</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Will</td>
+            <td>Johnson</td>
+            <td>will@yahoo.com</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Shannon</td>
+            <td>Williams</td>
+            <td>shannon@yahoo.com</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!----------------- Example of Class "Table-borderless" :- ----------------->
+
+    <li><h2 class="table-subhead font-weight-bold p-3 text-white text-center">Example of class called "Table-borderless"</h2></li>
+    <br>
+
+    <table class="table table-hover table-borderless">
+        <thead>
+        <tr>
+            <th class="font-weight-bold">#</th>
+            <th class="font-weight-bold">First Name</th>
+            <th class="font-weight-bold">Last Name</th>
+            <th class="font-weight-bold">Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>John</td>
+            <td>Doe</td>
+            <td>jdoe@gmail.com</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Will</td>
+            <td>Johnson</td>
+            <td>will@yahoo.com</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Shannon</td>
+            <td>Williams</td>
+            <td>shannon@yahoo.com</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!----------------- Example of Class "Custom-Table" :- ----------------->
+    <li><h2 class="table-subhead font-weight-bold p-3 text-white text-center">Example of class called "Custom-Table"</h2></li>
+    <br></ol>
+
+    <table class="table table-hover text-center text">
+        <thead class="bg-dark text-white">
+        <tr>
+            <th class="font-weight-bold">#</th>
+            <th class="font-weight-bold">First Name</th>
+            <th class="font-weight-bold">Last Name</th>
+            <th class="font-weight-bold">Email</th>
+        </tr>
+        </thead>
+        <tbody class="bg-light text-center">
+        <tr>
+            <th scope="row">1</th>
+            <td>John</td>
+            <td>Doe</td>
+            <td>jdoe@gmail.com</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Will</td>
+            <td>Johnson</td>
+            <td>will@yahoo.com</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Shannon</td>
+            <td>Williams</td>
+            <td>shannon@yahoo.com</td>
+        </tr>
+        </tbody>
+    </table>
+        <br><br>
+
+        <!-- PAGINATION pagination , page-item , page-link-->
+
+
+    </div><!-- ./container -->
+    <div style="margin-top:500px;"></div>
+
+<!-- BODY ENDS -->
+<script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/mdb.min.js"></script>
+</body>
+</html>

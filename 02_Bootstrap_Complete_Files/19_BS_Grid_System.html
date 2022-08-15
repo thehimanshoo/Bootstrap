@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/fontawesome.5.15.3.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <title>Grid System in Bootstrap4</title>
+    <style>
+        .grid{
+            background: linear-gradient(50deg,black,blueviolet);
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px black;
+            text-align: center;
+            text-shadow: 0 0 5px blue;
+        }
+        .info-section{
+            background: linear-gradient(50deg, black, blue);
+            box-shadow: 0 0 10px black;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-success">
+    <a class="navbar-brand" href="#">Grid System in Bootstrap4</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5">
+    <!--########################START HERE#########################-->
+
+    <!-- AUTO LAYOUT COLUMNS -->
+
+
+
+    <!-- RESPONSIVE GRID -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-6 col-xl-8 bg-primary text-white">
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem culpa eaque, excepturi iure minima nostrum optio perferendis temporibus vero voluptate. A aliquid aspernatur beatae deleniti dolorem, est fugit hic ipsam libero maiores neque perspiciatis porro provident quae quam veritatis voluptatum.</p>
+            </div>
+            <div class="col-sm-6 col-md-8 col-lg-6 col-xl-4 bg-danger text-white">
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In molestias omnis sapiente sequi veniam. Architecto asperiores autem consequatur culpa cupiditate deleniti eius ipsum labore laborum libero magni natus nemo non officiis quae quaerat, quam, quibusdam quod, rerum sapiente tenetur vel?</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <!---------------NESTING GRID --------------->
+
+    <h3 class="text-capitalize bg-danger text-white p-3 font-weight-bolder font-italic text-center">example of nesting grid</h3>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 bg-primary text-white">
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A delectus deleniti ducimus eveniet id, incidunt officia perferendis sed sint, tempore, velit voluptates? Alias autem exercitationem voluptate! Cupiditate earum illum rem!</p>
+            </div>
+            <div class="col-md-8 bg-secondary text-white">
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem consectetur consequatur corporis debitis dignissimos eius excepturi id magni neque officiis, pariatur rem repudiandae temporibus voluptates! Atque expedita quae tenetur.</p>
+                <div class="row">
+                    <div class="col-md-6 bg-danger text-white">
+                       <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequuntur dicta nisi nulla quae rem?</p>
+                        <div class="row">
+                            <div class="col-md-4 bg-info text-white">
+                                <p class="lead">Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="col-md-8 bg-dark text-white">
+                                <p class="lead">Lorem ipsum dolor sit amet.</p>
+                                <div class="row">
+                                    <div class="col-md-6 bg-danger text-white">
+                                        <p class="lead">Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                    <div class="col-md-6 bg-primary text-white">
+                                        <p class="lead">Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 bg-success text-white">
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dignissimos nobis reiciendis unde, ut velit.</p>
+                        <div class="row">
+                            <div class="col-md-8 bg-warning text-white">
+                                <p class="lead">Lorem ipsum dolor sit amet.</p>
+                                <div class="row">
+                                    <div class="col-md-6 bg-info text-white">
+                                        <p class="lead">Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                    <div class="col-md-6 bg-secondary text-white">
+                                        <p class="lead">Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 bg-light text-white">
+                                <p class="lead">Lorem ipsum dolor sit amet, consectetur elit.</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                <!--------------- GRID EXAMPLE --------------->
+<br><br>
+<h1 class="grid text-capitalize font-italic font-weight-bolder">Grid Example</h1>
+
+<section class="info-section text-white">
+    <div class="container text-center font-italic">
+        <div class="row">
+            <div class="col-md-4">
+                <i class="fa fa-users fa-4x"></i>
+                <h3 class="font-weight-bold font-italic">Best Faculty Members</h3>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam debitis delectus eaque eos, east eveniet expedita facere modi nolia quae quaerat reprehenderit soluta temporibus unde vero? facilis fuga molestias sequi.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-code fa-4x"></i>
+                <h3 class="font-weight-bold font-italic">Best Coding Skills</h3>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam debitis delectus eaque eos, east eveniet expedita facere modi nolia quae quaerat reprehenderit soluta temporibus unde vero? facilis fuga molestias sequi.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-book-reader fa-4x"></i>
+                <h3 class="font-weight-bold font-italic">Best Course Material</h3>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam debitis delectus eaque eos, east eveniet expedita facere modi nolia quae quaerat reprehenderit soluta temporibus unde vero? facilis fuga molestias sequi.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<br><br>
+
+<section class="bg-info text-white text-center p-3">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>We Provide Best Training For UI Technologies and MEAN Stack</h1>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur est illum repellat saepe tenetur. Amet eaque molestias nam quisquam.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <div style="margin-top:500px;"></div>
+
+<!-- BODY ENDS -->
+<script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/mdb.min.js"></script>
+</body>
+</html>

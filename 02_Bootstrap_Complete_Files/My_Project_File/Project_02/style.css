@@ -1,0 +1,294 @@
+body{
+    font-family: Arial, sans-serif;
+}
+/*--------------- Nav Section ---------------*/
+.navbar{
+    margin-bottom: 0;
+    border-bottom: 2px solid dimgray;
+    height: 50px;
+}
+.header-logo{
+    width: 180px;
+    height: 80px;
+    margin-left: -30px;
+    float: left;
+    left: 0;
+}
+.login{
+    background-color: white;
+    border: none;
+    margin-right: -770px;
+}
+.sign-up{
+    background-color: white;
+    border: none;
+    margin-right: -870px;
+}
+
+
+/*--------------- Body Section ---------------*/
+.heading{
+    margin-left: 80px;
+    margin-top: 30px;
+    font-size: 48px;
+    text-shadow: 0 0 1px black;
+}
+.heading-paragraph{
+    margin-left: 80px;
+    margin-top: -20px;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.find-work{
+    padding: 7px 25px;
+    margin-top: 10px;
+    margin-left: 80px;
+    border-radius: 50px;
+    background: linear-gradient(45deg,black,lime);
+    text-shadow: 2px 2px 6px black;
+    border: none;
+}
+.find-talent{
+    padding: 7px 25px;
+    margin-top: 10px;
+    margin-left: 80px;
+    border-radius: 50px;
+    background: linear-gradient(45deg,black,lime);
+    text-shadow: 2px 2px 6px black;
+    border: none;
+}
+
+.certificate-div{
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 80px;
+}
+.trusted-certificate{
+    display: inline;
+    margin-left: 65px;
+}
+
+/*--------------- Body Image Section ---------------*/
+
+.logo{
+    margin-left: 630px;
+    margin-top: -250px;
+}
+.d-block{
+    width: 800px;
+    height: 500px;
+    background-size: cover;
+    margin-left: 80px;
+}
+.carousel-item img{
+    border-radius: 10px;
+}
+/*--------------- Container Image section ---------------*/
+.container{
+    width: 700px;
+    height: 450px;
+    margin: auto;
+    position: relative;
+    box-sizing: border-box;
+}
+.container img{
+    width: inherit;
+    height:inherit;
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: 80px;
+    margin-left: -445px;
+}
+.container h6{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+}
+.corner-content{
+    margin-top: 0;
+    margin-left: 0;
+}
+.content{
+    margin-top: -200px;
+    margin-left: -300px;
+    color: rebeccapurple;
+}
+
+/*--------------- Carousel Content Section ---------------*/
+
+.corner-content{
+    margin-top: -420px;
+    margin-left: -50px;
+    text-shadow: 0 0 10px black;
+}
+.caption-head{
+    font-size: 45px;
+    margin-left: -650px;
+    margin-top: 60px;
+    text-shadow: 0 0 10px black;
+}
+.second-caption-head{
+    font-size: 45px;
+    margin-left: -675px;
+    margin-top: -20px;
+    text-shadow: 0 0 10px black;
+}
+.box-content{
+    margin-left: -530px;
+    text-shadow: 0 0 5px black;
+}
+.second-box-content{
+    margin-top: -20px;
+    margin-left: -520px;
+    text-shadow: 0 0 5px black;
+}
+.third-box-content{
+    margin-top: -43px;
+    margin-left: -595px;
+    text-shadow: 0 0 5px black;
+}
+
+/*--------------- Carousel First Button Section ---------------*/
+.first-button{
+    margin-left: -420px;
+    margin-top: 30px;
+    width: 220px;
+    height: 130px;
+    background-color: lime;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.one{
+    margin-left: -60px;
+    text-shadow: 0 0 5px black;
+}
+.two{
+    margin-top: -35px;
+     margin-left: -10px;
+    text-shadow: 0 0 5px black;
+}
+.three{
+    margin-top: -12px;
+    margin-left: -10px;
+    text-shadow: 0 0 5px black;
+}
+
+/*--------------- Carousel Second Button Section ---------------*/
+
+.second-button{
+    width: 220px;
+    height: 130px;
+    margin-top: 30px;
+    margin-left: -170px;
+    background-color: lime;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.four{
+    margin-top: -5px;
+    margin-left: -50px;
+    text-shadow: 0 0 5px black;
+}
+.five{
+    margin-top: -35px;
+    margin-left: -40px;
+    text-shadow: 0 0 5px black;
+}
+.six{
+    margin-top: -2px;
+    margin-left: -40px;
+    text-shadow: 0 0 5px black;
+}
+
+/*--------------- Carousel Third Button Section ---------------*/
+
+.third-button{
+    width: 220px;
+    height: 130px;
+    margin-top: 30px;
+    margin-left: 75px;
+    background-color: lime;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.seven{
+    margin-top: 2px;
+    margin-left: -2px;
+    text-shadow: 0 0 5px black;
+}
+.eight{
+    margin-top: -35px;
+    margin-left: -35px;
+    text-shadow: 0 0 5px black;
+}
+.nine{
+    margin-top: -35px;
+    margin-left: -125px;
+    text-shadow: 0 0 5px black;
+}
+.ten{
+    margin-top: -20px;
+    margin-left: -20px;
+    text-shadow: 0 0 5px black;
+}
+
+/*--------------- Carousel Body Section ---------------*/
+
+.form-quotation{
+    margin-left: 130px;
+}
+.second-line{
+    margin-top: -32px;
+}
+
+/*--------------- Anchor Tag Section ---------------*/
+
+.anchor-section{
+    margin-left: 65px;
+    color: gray;
+    font-size: 15px;
+}
+.project-image{
+    width: 270px;
+    height: 160px;
+    background-size: cover;
+    border-radius: 10px;
+    margin-left: 566px;
+    margin-top: -235px;
+}
+.table-button{
+    margin-left: 560px;
+    margin-top: -40px;
+}
+.button-one{
+    padding: 3px 15px;
+    border-radius: 50px;
+}
+.button-two{
+    padding: 3px 15px;
+    border-radius: 50px;
+    margin-left: 5px;
+}
+
+.button-three{
+    padding: 3px 15px;
+    margin-top: 12px;
+    border-radius: 50px;
+}
+.button-four{
+    padding: 3px 15px;
+    margin-top: 12px;
+    border-radius: 50px;
+}
+.button-five{
+    padding: 3px 15px;
+    margin-top: 12px;
+    border-radius: 50px;
+}
+.button-six{
+    padding: 3px 15px;
+    margin-top: 12px;
+    border-radius: 50px;
+}
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/fontawesome.5.15.3.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <title>Modals in Bootstrap4</title>
+    <style>
+        .register{
+            border-radius: 12px;
+        }
+        form{
+            padding: 10px;
+            border-radius: 10px;
+        }
+        label{
+            width: 100%;
+        }
+        input{
+            width: 100%;
+            padding: 3px;
+            border-radius: 5px;
+        }
+        select{
+            width: 100%;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        textarea{
+            border-radius: 5px;
+        }
+        .border-button{
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-success">
+    <a class="navbar-brand" href="#">Modals in Bootstrap4</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5">
+    <!--######################## START HERE #########################-->
+
+    <!-- MODAL TRIGGER -->
+
+   <button class="register btn btn-danger text-white" data-toggle="modal" data-target="#register-modal">Register</button>
+
+    <!--------------- Modal Header --------------->
+
+    <div class="modal" id="register-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h3>Register Here</h3>
+                    <button class="close" data-dismiss="modal">
+                        <i class="fa fa-times-circle"></i>
+                    </button>
+                </div>
+
+                <!--------------- Modal Body --------------->
+
+                <div class="modal-body">
+                    <form action="" class="bg-danger text-white">
+                        <div class="form-group">
+                            <label for="">Name</label>
+                            <input type="text" placeholder="Enter Your Name">
+                        </div>
+                        <div class="form-body">
+                            <label for="">Email</label>
+                            <input type="email" placeholder="email">
+                            <small>Your Email will not be shared with anyone</small>
+                        </div><br>
+                        <div class="form-group">
+                            <label for="">Password</label>
+                            <input type="password" placeholder="Password">
+                            <small>Password should be between 8-16 character</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Gender</label>
+                            <select name="" id="">
+                                <option value="">Male</option>
+                                <option value="">Female</option>
+                                <option value="">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="textarea">Message</label>
+                            <textarea name="" id="" cols="53" rows="3" maxlength="200"></textarea>
+                        </div>
+
+                        <div>
+                            <label for="file">File input</label>
+                            <input type="file" id="file">
+                            <small id="fileHelp">Max 3mb size</small>
+                        </div>
+                            <button type="submit" class="btn btn-danger text-white">Register</button>
+                            <a href="#" class="border-button d-inline btn btn-dark" data-dismiss="modal">Close</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--######################## END HERE #########################-->
+  </div>
+
+  <div style="margin-top:500px;"></div>
+
+<!-- BODY ENDS -->
+<script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/mdb.min.js"></script>
+</body>
+</html>

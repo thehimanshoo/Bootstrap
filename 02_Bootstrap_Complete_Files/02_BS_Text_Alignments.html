@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/fontawesome.5.15.3.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <title>Text Alignment & Display</title>
+    <style>
+
+        h2{
+            text-align: center;
+            margin-top: 40px;
+        }
+        h4{
+            margin-top: 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /*--------------- Text Alignment Property ---------------*/
+
+        .text-warning{
+            font-size: 22px;
+        }
+        .text-left{
+            background-color: yellow;
+            color: blue;
+            font-size: 30px;
+        }
+        .text-center{
+            background-color: yellow;
+            color: blue;
+            font-size: 30px;
+        }
+        .text-right{
+            background-color: yellow;
+            color: blue;
+            font-size: 30px;
+        }
+        .text-info{
+            text-align: center;
+            font-size: 22px ;
+        }
+        .text-color{
+            color: #fda085;
+            text-align: center;
+            background: lightskyblue;
+        }
+        .text-danger {
+            font-size: 22px;
+            margin-top: -5px;
+        }
+        .converted_text{
+            margin-top: 30px;
+            background-color: red;
+            padding: 10px;
+        }
+        .bg-secondary{
+            padding: 10px;
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+        .bg-danger{
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-success">
+    <a class="navbar-brand" href="#">Text Alignment & Display in Bootstrap</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5" >
+    <!--########################START HERE#########################-->
+
+    <!-- TEXT JUSTIFY -->
+
+    <ol type="1">
+        <li>
+            <h2 class="text-success">--------------- Important Notes ---------------</h2>
+        </li>
+
+            <p class="text-warning">* In CSS We have a paragraph when we go to some other screen we see the paragraph maintains some space
+                in their left side by default, but different / Irregular space in the Right side.. So, if we have to maintained the same space
+                in both the sides then there is a property called (style="text-align: justify") and have to write this attribute under the Punctuation < >
+                of the parent Element..This property gives the News-Paper Look..</p>
+
+            <h4 class="text-success">--------------------End Notes--------------------</h4>
+
+            <li>
+                <h2 class="text-success">Text Justify (example with CSS)</h2>
+            </li>
+            <p style="text-align: justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam enim esse et iste minus perspiciatis sit tempora. Ab asperiores beatae deserunt dicta, doloribus ea eligendi error ex excepturi explicabo libero maxime nemo nobis non numquam officia quaerat qui quia quibusdam quisquam rerum sequi sunt veniam veritatis voluptas? Harum, tenetur.</p>
+
+            <li>
+                <h2 class="text-success">Text Justify (example with Bootstrap)</h2>
+            </li>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam enim esse et iste minus perspiciatis sit tempora. Ab asperiores beatae deserunt dicta, doloribus ea eligendi error ex excepturi explicabo libero maxime nemo nobis non numquam officia quaerat qui quia quibusdam quisquam rerum sequi sunt veniam veritatis voluptas? Harum, tenetur.</p>
+
+        <!--TEXT ALIGNMENT -->
+
+        <li>
+            <h2 class="bg-danger">Text Alignment property in (Bootstrap)</h2>
+        </li>
+        <p class="text-warning">* This is a Simple property for moving the text in ur favour direction..
+            By default, always text will be in Left side but through this property of CSS we will be able to
+            rearrange the direction of the text to "Center" or "Right"..</p>
+
+        <ol type="A">
+            <li>
+                <h2 class="text-success">Text Alignment Left / Default (Example:-)</h2>
+            </li>
+                 <p class="text-left">Lorem ipsum dolor sit.</p>
+
+            <li>
+                <h2 class="text-success">Text Alignment Center (Example:-)</h2>
+            </li>
+                 <p class="text-center">Lorem ipsum dolor sit.</p>
+
+            <li>
+                <h2 class="text-success">Text Alignment Right (Example:-)</h2>
+            </li>
+                <p class="text-right">Lorem ipsum dolor sit.</p>
+        </ol>
+
+
+        <!-- RESPONSIVE TEXT ALIGN -->
+
+        <li>
+        <p class="text-info">Responsive Text Alignment, are Alignment which respond According to the size of the screen,
+        the screen were divided into 4 parts.. <br> <br> 1. Mobile Screen Type "576px" (sm) <br> 2. Tab. Screen Type "776" (md)
+            <br> 3. Laptop Screen Type "992px" (lg) <br> 4. Extra-large / Projector Type "1200px" (xl) <br> <br>When we put
+        Responsive Text-Alignment for the given screen type then whatever you give attribute for that screen type that
+        styles only apply for that particular screen and remaining screen will be default type..</p>
+        </li>
+
+            <h2 class="text-success">Responsive Text Alignment</h2>
+        <p class="text-sm-right">Right aligned on small or larger</p>
+        <p class="text-md-center">Right aligned on medium or larger</p>
+        <p class="text-lg-right">Right aligned on large or larger</p>
+        <p class="text-xl-right">Right aligned on xl or larger</p>
+
+        <br><br>
+
+        <!-- TURN BLOCK TO INLINE -->
+
+        <li>
+        <h2 class="text-color">Turn Block to Inline (In Bootstrap)</h2>
+        </li>
+        <p class="text-warning">In CSS class, if we had to display something from block/default to inline, then what we do...? We write
+            an Attribute called :- display: inline;</p> <p class="text-danger">The same thing in Bootstrap we write an Attribute called "d-inline, d-block, d-inline-block, d-flex"
+            according to our need which one we would like lo apply..</p>
+
+        <h1 class="bg-success">Hello</h1>
+        <h1 class="bg-success">Goodbye</h1>
+
+        <h2 class="bg-warning">changing it form Block to Inline</h2>
+                     <br>
+        <h3 class="bg-default d-inline">Hello</h3>
+        <h3 class="bg-default d-inline">Goodbye</h3>
+
+        <br><br>
+
+        <!-- TURN INLINE TO BLOCK -->
+
+            <li class="bg-warning">
+                <h2>Turn Inline to Block</h2>
+            </li>
+        <h3 class="text-success">Inline Element</h3>
+        <span class="bg-warning">Block</span>
+        <span class="bg-warning">Block</span>
+                    <br><br>
+        <span class="bg-warning d-block">Turned to Block</span>
+                <br>
+        <span class="bg-warning d-block">Turned to Block</span>
+
+
+        <!-- INLINE BLOCK -->
+
+        <li>
+            <h2 class="bg-secondary">Hello!! I am Inline-Block Element</h2>
+        </li>
+
+        <div class="bg-info">
+            <h3>Hello!!</h3>
+            This is Inline-Block Element..
+        </div>
+                 <br>
+
+        <div class="bg-info">
+            <h3>Hello!!</h3>
+            This is Inline-Block Element..
+        </div>
+
+        <h3 class="converted_text">Hello!! I am converted to Inline-Block</h3>
+                     <br>
+        <div class="bg-info d-inline-block">
+            <h3>Hello!!</h3>
+            This is Inline-Block Element..
+        </div>
+
+        <div class="bg-info d-inline-block">
+            <h3>Hello!!</h3>
+            This is Inline-Block Element..
+        </div>
+
+        <!--------------- Hidden --------------->
+
+        <li>
+            <h2 class="bg-danger">Hii.. My Next Line Is Hidden</h2>
+        </li>
+
+            <h2 class="bg-danger d-none">Hidden Section</h2>
+    </ol>
+
+    <div style="margin-top:500px;"></div>
+
+    <!-- BODY ENDS -->
+    <script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/mdb.min.js"></script>
+
+</body>
+</html>

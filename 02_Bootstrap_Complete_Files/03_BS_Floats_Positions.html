@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <title>Floats Position</title>
+    <style>
+        .text-dark{
+            font-size: 22px;
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 10px;
+            background: linear-gradient(45deg,lightgreen,red,lightgreen);
+        }
+        .content{
+            background: linear-gradient(180deg,#00e5ff,red);
+            padding: 10px;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+            text-shadow: 0 0 10px black;
+        }
+        .float-left{
+            background-color: fuchsia;
+            font-size: x-large;
+            padding: 5px 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+            text-shadow: 0 0 10px black;
+        }
+        .float-right{
+            background-color: turquoise;
+            font-size: x-large;
+            padding: 5px 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+            text-shadow: 0 0 10px black;
+        }
+        .float-none{
+            background: linear-gradient(180deg,red,#00e5ff,red);
+            font-size: xx-large;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+            text-shadow: 0 0 10px black;
+            text-align: left;
+        }
+
+        /*--------------- Responsive Float ---------------*/
+
+        .responsive-float{
+            text-align: center;
+            padding: 10px;
+            background: linear-gradient(180deg,lightgreen,red);
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+            color: white;
+            text-shadow: 0 0 10px black;
+        }
+        .responsive-float-content{
+            background: linear-gradient(180deg,lightgreen,blueviolet,lightgreen);
+            color: white;
+            box-shadow: 0 20px 10px white;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        .text-justify{
+            background: linear-gradient(180deg,orange,lightgreen);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .float-sm-left{
+            background: linear-gradient(45deg,orange,red);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .float-md-right{
+            background: linear-gradient(45deg,darkorange,red);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .float-lg-right{
+            background: linear-gradient(45deg,darkorange,red);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .float-xl-left{
+            background: linear-gradient(45deg,darkorange,#00e5ff);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        /*--------------- Clear Fix ---------------*/
+
+        .clearfix{
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        /*--------------- Fixed or Sticky Position ---------------*/
+
+        .font-weight-bold{
+
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .color-fixed{
+            background-color: #811b1b;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .color-sticky{
+            background: linear-gradient(180deg,darkorange,lightgreen);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .fixed-or-sticky-position{
+            background: linear-gradient(180deg,orange,lightgreen,red);
+            padding: 10px;
+            border-radius: 10px;
+            text-shadow: 0 0 10px black;
+        }
+
+        /*--------------- Bottom Section ---------------*/
+
+        .fixed{
+            background: linear-gradient(180deg,orangered,black,limegreen);
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .fixed-bottom{
+            background: linear-gradient(180deg,orange,lightgreen,red);
+            display: flex;
+            justify-content: center;
+            text-shadow: 0 0 10px black;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-success">
+    <a class="navbar-brand" href="#">Floats Position in Bootstrap</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+`
+<div class="container mt-5">
+        <!--########################START HERE#########################-->
+
+        <!-- FLOATS -->
+
+    <ol>
+        <li>
+            <h3 class="text-dark" style="text-align: justify">Float, as we have read about it in "CSS" that it is a property which used to float some text to Left or
+            Right.. Actually by default it always float left but when we give an Attribute called "float-left / float-Right "
+            it sticks to that position.. In "CSS" To apply this style, the Attribute used called :- display: float;</h3>
+            <h3 class="text-dark" style="text-align: justify">But, in Bootstrap if you want to use this property then you will have to give the different Attribute for
+            the same style and the "Attribute" is :- <br>
+                <ul>
+                    <li>
+                        <h4>float-left</h4></li>
+                    <li>
+                        <h4>float-right</h4>
+                    </li>
+                </ul>
+            </h3>
+        </li>
+
+        <ol type="A">
+            <li>
+                <h2 class="font-weight-bold content">I am floating Content</h2>
+            </li>
+            </ol>
+
+                 <br>
+            <ol type="i">
+            <li>
+                <div class="font-weight-bold float-left">Float left</div><br>
+            </li>
+
+                <br>
+            <li>
+                <div class="font-weight-bold float-right">Float right</div>
+            </li>
+
+                <br>
+            <li class="float-none">
+                <div class="font-weight-bold">Float none</div><br>
+            </li>
+    </ol>
+        <br><br>
+
+        <!-- RESPONSIVE FLOATS -->
+
+        <li>
+            <h2 class="font-weight-bold responsive-float">Responsive Float</h2>
+        </li>
+                <br>
+        <p class="responsive-float-content">Responsive Float refers to the style of float that responses according ot the screen size..
+        As we already knows and read in "CSS" Float Box Concept, but that were non-responsive float
+        but this concept of "Bootstrap" Provides much better style as compared to "CSS" and also if
+        you write a style for a (sm) type screen then it only apply to that special one and remaining
+        screen style will set to the default until you don't write a style for that other one..</p>
+
+
+                <h3 class="text-justify">Responsive Float Example :- </h3>
+
+        <ol type="i">
+            <li>
+                <div class="float-sm-left">Float right on small or wider</div>
+            </li><br>
+
+            <br>
+            <li>
+                <div class="float-md-right">Float right on medium or wider</div><br>
+            </li>
+            <br>
+
+            <br>
+            <li>
+                <div class="float-lg-right">Float right on large or wider</div><br>
+            </li>
+            <br>
+
+            <br>
+            <li>
+                <div class="float-xl-left">Float right on extra large or wider</div><br>
+            </li>
+            <br>
+        </ol>
+
+
+        <!-- CLEARFIX -->
+
+        <li>
+            <p class="clearfix text-justify"> <b>Clearfix</b> is a property of <u>Bootstrap</u> it is generally used when we have to "Float" Something to Left-Side
+                and "Float" Something to Right-Side, then the default nature of <b>"Float"</b> is the middle side between
+            both the <b>Floated</b> thing and covers that space.. By this <b><u>Clearfix-Property</u></b> of <b>Bootstrap</b>
+            the covered space which was occupy by the <b>Paragraph Content</b> will get clear..</p>
+            <br>
+            <p class="text-justify">Same thing in <b>CSS</b> we apply the Attribute called <b><u>Clear Both</u></b>..</p>
+        </li>
+
+        <div class="bg-success clearfix">
+            <button class="btn btn-secondary float-left clearfix">Float Left</button>
+            <button class="btn btn-secondary float-right">Float Right</button>
+        </div>
+
+        <!-- FIXED TOP -->
+
+        <br>
+        <li>
+            <h2 class="fixed-or-sticky-position font-weight-bold">Fixed or Sticky Position</h2>
+        </li>
+        <br>
+
+                <ol type="A">
+                    <li>
+                        <h3 class="color-fixed">Fixed Top (Next line is fixed to the Top)</h3>
+                    </li>
+                </ol>
+
+                        <h3 class="fixed-top font-weight-bold">Fixed Toop</h3>
+        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae iure natus, fuga provident molestias, voluptates molestiae aperiam sit dicta a assumenda nesciunt quos adipisci reprehenderit animi ipsum unde quasi nobis veniam, modi. Fuga natus harum, maxime corporis rerum, maiores delectus aliquam aut quo incidunt dignissimos temporibus? Vitae dolorem accusamus voluptatibus illo aut nam praesentium obcaecati quaerat cupiditate distinctio tempora eius esse fuga, repellat fugit harum quia nihil sit in debitis expedita. Eos, voluptates eum rem voluptatum tempore accusamus soluta enim, animi in voluptatibus aliquam distinctio totam repudiandae necessitatibus quidem consequatur incidunt aliquid ad! Inventore ratione, consequatur eligendi iusto esse iure officia praesentium magni in! Nemo tempora, voluptatem facilis reprehenderit minima reiciendis alias similique est rem debitis id expedita voluptatum porro fugiat magni inventore neque. </p>
+
+        <!-- FIXED STICKY -->
+
+
+        <ol type="A">
+            <li>
+                <h3 class="font-weight-bold color-sticky">I Am Sticky (Next line is Sticky)</h3>
+            </li>
+        </ol>
+
+        <br>
+            <h3 class="font-weight-bold sticky-top">Sticky</h3>
+
+        <p class="text-justify">Est molestias sunt quae quibusdam sequi odit, iusto expedita tempore aspernatur ipsum, necessitatibus rerum debitis, harum, voluptatibus dolorem. Reprehenderit ex aperiam tempore. Cumque ut iste ullam non pariatur, qui architecto, commodi illo praesentium debitis similique, molestiae harum distinctio inventore incidunt enim atque repudiandae eius molestias exercitationem tempore odio dignissimos iusto officia. Libero quasi dicta quos est eveniet magni deserunt aut vero id ad, incidunt nostrum provident tempora modi placeat voluptatem, quod excepturi ipsam aspernatur necessitatibus molestias possimus veritatis sequi. Minus ducimus maiores debitis, nulla magni eum ratione numquam deleniti sunt et dolorum necessitatibus cumque fugit libero recusandae impedit, quaerat, nemo. Vel temporibus amet alias mollitia aspernatur error sint, doloremque, porro blanditiis quia atque ratione reiciendis, praesentium sed doloribus excepturi. Eius tenetur quis veniam enim atque fugit, a itaque dignissimos iusto, tempore fugiat minima libero quasi exercitationem corrupti nam sequi, doloremque quae repudiandae quisquam iure nisi totam consectetur. Corrupti corporis doloribus dolore iusto perspiciatis ipsum, enim sapiente nobis ullam delectus aperiam eaque harum sequi porro! Reprehenderit hic dolores repellat deleniti, illo nostrum nam at odio quasi quis eaque asperiores culpa doloremque ad velit ullam ratione omnis quae adipisci autem necessitatibus. Quod nam non maiores assumenda quae eius nobis cum suscipit, optio aliquid beatae modi tempora delectus voluptatibus debitis earum natus amet libero itaque quasi expedita, maxime repudiandae! Repudiandae sunt similique eum, provident deserunt vitae. Maxime nostrum, nemo quia eius rerum quas recusandae. Molestiae ullam dignissimos illo eum necessitatibus culpa ea, distinctio maiores molestias aliquam, eligendi soluta cumque odio quaerat cupiditate similique in accusamus dolorum nobis. Ea, rem fugit. Minima quae magni laboriosam possimus corporis quidem recusandae aspernatur dignissimos accusamus adipisci, maiores, tenetur excepturi doloremque eum consequuntur? Expedita possimus sit, vel neque fugiat quo ab? Quaerat alias, molestias rerum repudiandae, iste, voluptatem consequatur ex enim tenetur quidem expedita, provident vel reiciendis. Ea ipsam suscipit ex ab nulla est, aspernatur nesciunt consequatur cumque laudantium. Unde ab earum eius vero obcaecati reiciendis omnis quod culpa harum, modi, possimus molestiae voluptatibus beatae, minima ad accusamus quibusdam! Dolor nostrum impedit culpa nemo expedita, numquam dignissimos totam ex reprehenderit consectetur neque dicta deserunt, recusandae porro ipsa accusamus maxime soluta eum facilis temporibus nesciunt accusantium. Placeat provident facere blanditiis doloremque eos tempora officia doloribus deserunt molestias voluptates velit hic, tenetur cupiditate ab. Hic, unde!</p>
+
+        <!-- FIXED BOTTOM -->
+
+
+            <li>
+                <h3 class="font-weight-bold fixed">Fixed Bottom (Next Line Fixed to Bottom)</h3>
+            </li>
+
+            <ol>
+                <li>
+                    <h3 class="font-weight-bold fixed-bottom text-justify">Fixed Bottom</h3>
+                </li>
+            </ol>
+    </ol>
+
+    </div><!-- ./container -->
+    <div style="margin-top:500px;"></div>
+
+<!-- BODY ENDS -->
+<script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/mdb.min.js"></script>
+</body>
+</html>

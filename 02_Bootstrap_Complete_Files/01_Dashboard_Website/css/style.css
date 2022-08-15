@@ -1,0 +1,37 @@
+
+body{
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 18px;
+}
+.dropdown-item:hover{
+    background: linear-gradient(45deg,darkslategrey, black) !important;
+    color: white !important;
+    box-shadow: 0 5px 5px black;
+}
+.bg-teal{
+    background-color: #002c2c;
+}
+.bg-light-blue{
+    background-color: lightblue;
+}
+.bg-light-green{
+    background-color: lightgreen;
+}
+.bg-light-coral{
+    background-color: lightcoral;
+}
+.p-image{
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+.card-design{
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+.btn-design{
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+}
+.bg-deep-orange{
+    background: linear-gradient(50deg,black,#ff5200);
+}

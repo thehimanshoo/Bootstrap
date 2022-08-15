@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/fontawesome.5.15.3.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <title>Spacing in Bootstrap4</title>
+    <style>
+
+        /*--------------------- Head Section ---------------------*/
+
+        .main-header{
+            background: linear-gradient(180deg,black,red);
+            color: white;
+            padding: 12px;
+            border-radius: 10px;
+            text-shadow: 0 0 10px blue;
+        }
+        .main-content{
+            background-color: yellow;
+            padding: 12px;
+            border-radius: 10px;
+        }
+
+
+        /*--------------------- Margin-Top ---------------------*/
+
+        .margin-top{
+            background: linear-gradient(45deg,black,red);
+            color: white;
+            padding: 12px;
+            border-radius: 10px;
+            text-shadow: 0 0 10px black;
+            margin-bottom: 0;
+        }
+        .margin-top-section{
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        /*--------------------- Margin-Bottom ---------------------*/
+
+        .margin-bottom{
+            background: linear-gradient(45deg,black,red);
+            color: white;
+            padding: 12px;
+            border-radius: 10px;
+            text-shadow: 0 0 10px black;
+        }
+        .margin-bottom-section{
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        /*--------------------- Margin-All Side ---------------------*/
+
+        .margin-all-example{
+            background: linear-gradient(45deg,black,red);
+            color: white;
+            padding: 12px;
+            border-radius: 10px;
+            text-shadow: 0 0 10px black;
+        }
+        .margin-all-content{
+            background: linear-gradient(45deg,saddlebrown,black,saddlebrown);
+            color: white;
+            padding: 5px;
+            border-radius: 10px;
+            text-shadow: 0 0 10px black;
+        }
+        .content-background{
+            padding: 12px;
+            margin: 10px 0;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+        }
+        .margin-all{
+            background: linear-gradient(45deg,black,red);
+            color: white;
+            padding: 12px;
+            border-radius: 10px;
+            text-shadow: 0 0 10px black;
+        }
+        .example-content{
+            background: linear-gradient(45deg,saddlebrown,black,saddlebrown);
+            color: white;
+            padding: 5px;
+            border-radius: 10px;
+            text-shadow: 0 0 10px black;
+        }
+
+        /*--------------------- PADDING TOP (PT) ---------------------*/
+
+        .padding-top-heading{
+            background: linear-gradient(45deg,black,red);
+            color: white;
+            padding: 12px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+        }
+        .padding-top-content{
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+            margin-bottom: 20px;
+        }
+        .radius-pt{
+            border-radius: 5px;
+            padding: 5px;
+            box-shadow: 0 0 10px black;
+        }
+
+        /*--------------------- PADDING BOTTOM (PB) ---------------------*/
+
+        .padding-bottom-heading{
+            background: linear-gradient(45deg,black,red);
+            color: white;
+            padding: 12px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+        }
+        .padding-bottom-content{
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+            margin-bottom: 20px;
+        }
+        .radius-pb{
+            border-radius: 5px;
+            padding: 5px;
+            box-shadow: 0 0 10px black;
+        }
+        .my-heading{
+            background: linear-gradient(45deg,black,blueviolet);
+            width: 350px;
+            box-shadow: 0 0 10px black;
+            border-radius: 0 30px 0 30px;
+            border: 5px solid white;
+            text-shadow: 0 0 10px black;
+        }
+        .my-heading:hover{
+            background: linear-gradient(180deg,red,black,red);
+            color: white;
+            width: 350px;
+            box-shadow: 0 0 10px black;
+            border-radius: 0 30px 0 30px;
+            border: 5px solid white;
+            text-shadow: 0 0 10px #00e5ff;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-success">
+    <a class="navbar-brand" href="#">Spacing in Bootstrap4</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5">
+        <!--########################START HERE#########################-->
+
+    <!-- MB MARGIN BOTTOM -->
+
+     <ol class="main-header font-weight-bolder display-4">
+         <li>
+             <h1 class="font-weight-bolder">Bootstrap Margin , Padding(0,1,2,3,4,5,auto)</h1>
+         </li>
+     </ol>
+
+            <h2 class="main-content font-weight-bolder">Bootstrap <b class="text-primary">Margin</b> and <b class="text-primary">Padding</b> are the Same Content Style of <u class="text-primary">CSS</u> which we had already
+            read in the previous class in this concept of <u class="text-success">Bootstrap</u> we have to learn about how we can use the same
+                thing in <u class="text-success">Bootstrap</u> with a shortcut key that apply the same effect for the content..
+            </h2><br>
+
+        <h2>Some Shortcuts are available :-</h2>
+        <ul>
+            <li>
+                <h2 class="font-weight-bolder">Padding - (0,1,2,3,4,5,auto)</h2>
+            </li>
+            <li class="font-weight-bolder">Padding :- <br> Padding-left(pl) ==> towards X-axis(px) <br> Padding-right(pr) <br> Padding-top(pt) ==> towards Y-axis(py)
+                <br> Padding-bottom(pb) <br> (p) ==> For all side</li>
+
+            <li class="font-weight-bolder">Margin :- <br> Margin-left(ml) ==> towards X-axis(mx) <br> Margin-right(mr) <br> Margin-top(mt) ==> towards Y-axis(my)
+                <br> Margin-bottom(mb) <br> (m) ==> For all side</li>
+        </ul>
+
+    <!----------------- Margin Top ----------------->
+
+    <h1 class="margin-top font-weight-bolder">Example of "Margin-Top" :-</h1>
+
+        <h2 class="margin-top-section bg-success mt-0">Lorem ipsum.</h2>
+        <h2 class="margin-top-section bg-success mt-1">Lorem ipsum.</h2>
+        <h2 class="margin-top-section bg-success mt-2">Lorem ipsum.</h2>
+        <h2 class="margin-top-section bg-success mt-3">Lorem ipsum.</h2>
+        <h2 class="margin-top-section bg-success mt-4">Lorem ipsum.</h2>
+        <h2 class="margin-top-section bg-success mt-5">Lorem ipsum.</h2>
+
+
+        <!----------------- Margin Bottom ----------------->
+
+            <h1 class="margin-bottom font-weight-bolder">Example of "Margin-Bottom" :-</h1>
+
+        <h2 class="margin-bottom-section bg-success mb-0">Lorem ipsum.</h2>
+        <h2 class="margin-bottom-section bg-success mb-1">Lorem ipsum.</h2>
+        <h2 class="margin-bottom-section bg-success mb-2">Lorem ipsum.</h2>
+        <h2 class="margin-bottom-section bg-success mb-3">Lorem ipsum.</h2>
+        <h2 class="margin-bottom-section bg-success mb-4">Lorem ipsum.</h2>
+        <h2 class="margin-bottom-section bg-success mb-5">Lorem ipsum.</h2>
+
+
+    <!----------------- MARGIN ALL SIDES / BLANK ALL SIDES ----------------->
+
+        <h1 class="margin-all font-weight-bolder margin-all-example">Margin all Sides / Blank all sides</h1>
+
+    <h2 class="example-content font-weight-bolder margin-all-content">Example of Margin all Sides</h2>
+
+   <ul class="content-background" style="background: linear-gradient(45deg,black,lightyellow)">
+       <li><p class="font-weight-bolder">Lorem ipsum dolor sit amet, consectetur elit. Voluptatum, optio.</p></li>
+       <li><p class="font-weight-bolder bg-success m-5">Lorem ipsum dolor sit amet, consectetur elit. Voluptatum, optio.</p></li>
+       <li><p class="font-weight-bolder">Lorem ipsum dolor sit amet, consectetur elit. Voluptatum, optio.</p></li>
+   </ul>
+        <br><br>
+
+    <!----------------- PT PADDING TOP ----------------->
+
+    <h1 class="padding-top-heading font-weight-bolder">Padding Top Examples :-</h1>
+
+        <ul class="font-weight-bolder">
+            <li class="padding-top-content pt-0"><h2 class="radius-pt bg-warning">Lorem ipsum.</h2></li>
+            <li class="padding-top-content pt-1"><h2 class="radius-pt bg-warning">Lorem ipsum.</h2></li>
+            <li class="padding-top-content pt-2"><h2 class="radius-pt bg-warning">Lorem ipsum.</h2></li>
+            <li class="padding-top-content pt-3"><h2 class="radius-pt bg-warning">Lorem ipsum.</h2></li>
+            <li class="padding-top-content pt-4"><h2 class="radius-pt bg-warning">Lorem ipsum.</h2></li>
+            <li class="padding-top-content pt-5"><h2 class="radius-pt bg-warning">Lorem ipsum.</h2></li>
+        </ul>
+
+        <br><br>
+
+    <!----------------- PB PADDING BOTTOM ----------------->
+
+    <h1 class="padding-bottom-heading font-weight-bolder">Padding Bottom Examples :-</h1>
+
+    <ul class="font-weight-bolder">
+        <li class="padding-bottom-content pb-0"><h2 class="radius-pb bg-warning">Lorem ipsum.</h2></li>
+        <li class="padding-bottom-content pb-1"><h2 class="radius-pb bg-warning">Lorem ipsum.</h2></li>
+        <li class="padding-bottom-content pb-2"><h2 class="radius-pb bg-warning">Lorem ipsum.</h2></li>
+        <li class="padding-bottom-content pb-3"><h2 class="radius-pb bg-warning">Lorem ipsum.</h2></li>
+        <li class="padding-bottom-content pb-4"><h2 class="radius-pb bg-warning">Lorem ipsum.</h2></li>
+        <li class="padding-bottom-content pb-5"><h2 class="radius-pb bg-warning">Lorem ipsum.</h2></li>
+    </ul>
+
+    <!-- BLANK - ALL SIDES -->
+        <p class="bg-warning">Lorem ipsum dolor sit amet, consectetur elit. Voluptatum, optio.</p>
+
+    <!----------------- Mixed Class Example :- ----------------->
+
+    <h1>Mixed Class Example :-</h1>
+
+    <h2 class="my-heading font-weight-bolder bg-primary text-white p-2 m-3 text-center text-uppercase">Good Morning</h2>
+
+    </div><!-- ./container -->
+    <div style="margin-top:500px;"></div>
+
+<!-- BODY ENDS -->
+<script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/mdb.min.js"></script>
+</body>
+</html>
